@@ -2,7 +2,7 @@ let selectedImages = [];
 
 $("#submit").click(function(){
 	$.ajax({
-		  url:"http://localhost:52520/img_history",
+		  url:"http://e3540793.ngrok.io/img_history",
 		  type:"POST",
 		  data: JSON.stringify({selectedImages}),
 		  contentType:"application/json",
@@ -13,7 +13,7 @@ $("#submit").click(function(){
         $( "img.img" ).remove();
         for (let img of data.img_recommended) {
           $( "#images" ).append( `
-          <img class="img" src="https://010703da.ngrok.io/${img}" alt="Smiley face" data-img=${img} width="200" height="200">
+          <img class="img" src="https://da91000b.ngrok.io/${img}" alt="Smiley face" data-img=${img} width="200" height="200">
           `);
         }
         $( ".img" ).click(function() {

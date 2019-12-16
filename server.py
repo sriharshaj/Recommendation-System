@@ -51,4 +51,4 @@ def render_static():
     return render_template('./test.html')
 
 if __name__ == '__main__':
-    api.run(debug=True)
+    api.run()
